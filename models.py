@@ -54,7 +54,6 @@ class _PixelShuffler(nn.Module):  # 其功能是将filter的大小变为原来�
         out = out.view(batch_size, oc, oh, ow)  # channel first     （-1，512，8，8）
         return out
 
-
 class Autoencoder(nn.Module):
     def __init__(self):
         super(Autoencoder, self).__init__()
